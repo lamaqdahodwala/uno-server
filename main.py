@@ -18,6 +18,10 @@ class JoinGameHandler(Boilerplate):
     def get(self):
         pass
 
+class LeaveGameHandler(Boilerplate):
+    def get(self):
+        pass
+
 
 def init():
     return Application([
