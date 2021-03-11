@@ -1,13 +1,14 @@
 from tornado.web import Application, RequestHandler, url
 import tornado.ioloop
 
+
 class Boilerplate(RequestHandler):
     def set_default_headers(self):
         self.set_header('Access-Control-Allow-Origin', "*")
 
 class HomeHandler(Boilerplate):
     def get(self):
-        pass
+        self.write('')
 
 class CreateGameHandler(Boilerplate):
     def get(self): 
